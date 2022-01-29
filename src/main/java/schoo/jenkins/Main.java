@@ -12,12 +12,12 @@ public class Main extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
         PrintWriter out = resp.getWriter();
-        String value = req.getParameter("value");
+        //String value = req.getParameter("value");
         String text = "Pass a number as value parameter";
-        if (value != null && !value.isEmpty() && isInteger(value)) {
-            FizzBuzz fizzBuzz = new FizzBuzz();
-            text = fizzBuzz.execute(Integer.parseInt(value));
-        }
+        //if (value != null && !value.isEmpty() && isInteger(value)) {
+        //    FizzBuzz fizzBuzz = new FizzBuzz();
+        //    text = fizzBuzz.execute(Integer.parseInt(value));
+        //}
         String html = "<html>" +
                 "<title>Schoo Jenkins</title>" +
                 "<body>" +
